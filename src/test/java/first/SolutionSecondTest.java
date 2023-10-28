@@ -1,11 +1,11 @@
 package first;
 
-import org.uni.first.SolutionSecond;
-import org.uni.first.utils.LinkedList;
-import org.uni.first.utils.LinkedList.ListNode;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
+import org.uni.first.SolutionSecond;
+import org.uni.first.utils.LinkedList;
+import org.uni.first.utils.LinkedList.ListNode;
 import utils.TestCase;
 
 import java.util.ArrayList;

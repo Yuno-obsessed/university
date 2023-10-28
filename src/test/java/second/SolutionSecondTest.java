@@ -3,7 +3,6 @@ package second;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
-import org.uni.second.SolutionFirst;
 import org.uni.second.SolutionSecond;
 import utils.TestCase;
 

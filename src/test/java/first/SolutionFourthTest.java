@@ -1,9 +1,9 @@
 package first;
 
-import org.uni.first.SolutionFourth;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
+import org.uni.first.SolutionFourth;
 import utils.TestCase;
 
 import java.util.ArrayList;
