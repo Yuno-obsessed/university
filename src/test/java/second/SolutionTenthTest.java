@@ -3,7 +3,7 @@ package second;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
-import org.uni.second.SolutionFourth;
+import org.uni.second.SolutionTenth;
 import utils.TestCase;
 
 import java.util.ArrayList;
@@ -13,24 +13,23 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-public class SolutionFourthTest {
+public class SolutionTenthTest {
 
-    private static SolutionFourth solutionFourth;
+    private static SolutionTenth solutionTenth;
     private static List<TestCase<int[], int[]>> testCases = new ArrayList<>();
 
     @BeforeAll
     public void initTests() {
-        solutionFourth = new SolutionFourth();
-        testCases.add(new TestCase<>(new int[]{1,0,2,3,0,4,5,0}, new int[]{1,0,0,2,3,0,0,4}));
-        testCases.add(new TestCase<>(new int[]{1,2,3}, new int[]{1,2,3}));
-        testCases.add(new TestCase<>(new int[]{0,1,3,0,0,2,3}, new int[]{0,0,1,3,0,0,0}));
+        solutionTenth = new SolutionTenth();
+        testCases.add(new TestCase<>(new int[]{3,1,2,4}, new int[]{4,2,1,3}));
+        testCases.add(new TestCase<>(new int[]{0}, new int[]{0}));
     }
 
     @Test
-    public void duplicateZerosTest() {
+    public void moveEvenOddTest() {
         for (TestCase<int[], int[]> testCase : testCases) {
             int[] input = testCase.getInput();
-            int[] output = solutionFourth.duplicateZeros(input);
+            int[] output = solutionTenth.moveEvenOdd(Arrays.copyOf(input, input.length));
             int[] expected = testCase.getExpected();
 
             System.out.printf("Input: nums = %s\nOutput: %s\nExpected: %s\n\n",
@@ -39,5 +38,4 @@ public class SolutionFourthTest {
             assertThat(output).isEqualTo(expected);
         }
     }
-
 }

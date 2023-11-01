@@ -3,7 +3,7 @@ package second;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
-import org.uni.second.SolutionFourth;
+import org.uni.second.SolutionNinth;
 import utils.TestCase;
 
 import java.util.ArrayList;
@@ -13,24 +13,23 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-public class SolutionFourthTest {
+public class SolutionNinthTest {
 
-    private static SolutionFourth solutionFourth;
+    private static SolutionNinth solutionNinth;
     private static List<TestCase<int[], int[]>> testCases = new ArrayList<>();
 
     @BeforeAll
     public void initTests() {
-        solutionFourth = new SolutionFourth();
-        testCases.add(new TestCase<>(new int[]{1,0,2,3,0,4,5,0}, new int[]{1,0,0,2,3,0,0,4}));
-        testCases.add(new TestCase<>(new int[]{1,2,3}, new int[]{1,2,3}));
-        testCases.add(new TestCase<>(new int[]{0,1,3,0,0,2,3}, new int[]{0,0,1,3,0,0,0}));
+        solutionNinth = new SolutionNinth();
+        testCases.add(new TestCase<>(new int[]{17,18,5,4,6,1}, new int[]{18,6,6,6,1,-1}));
+        testCases.add(new TestCase<>(new int[]{400}, new int[]{-1}));
     }
 
     @Test
-    public void duplicateZerosTest() {
+    public void replaceElementsTest() {
         for (TestCase<int[], int[]> testCase : testCases) {
             int[] input = testCase.getInput();
-            int[] output = solutionFourth.duplicateZeros(input);
+            int[] output = solutionNinth.replaceElements(Arrays.copyOf(input, input.length));
             int[] expected = testCase.getExpected();
 
             System.out.printf("Input: nums = %s\nOutput: %s\nExpected: %s\n\n",
