@@ -1,4 +1,4 @@
-package org.uni.inversion;
+package org.uni.recursion;
 
 import org.uni.utils.LinkedList.ListNode;
 

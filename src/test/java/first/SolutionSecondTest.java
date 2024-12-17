@@ -3,7 +3,7 @@ package first;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
-import org.uni.inversion.SolutionSecond;
+import org.uni.recursion.SolutionSecond;
 import org.uni.utils.LinkedList;
 import org.uni.utils.LinkedList.ListNode;
 import utils.TestCase;

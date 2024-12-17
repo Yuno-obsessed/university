@@ -1,4 +1,4 @@
-package org.uni.inversion;
+package org.uni.recursion;
 
 
 public class SolutionFirst {

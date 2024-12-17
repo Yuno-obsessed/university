@@ -3,7 +3,7 @@ package first;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
-import org.uni.inversion.SolutionFourth;
+import org.uni.recursion.SolutionFourth;
 import utils.TestCase;
 
 import java.util.ArrayList;

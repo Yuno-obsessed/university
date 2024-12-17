@@ -3,7 +3,7 @@ package first;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
-import org.uni.inversion.SolutionFifth;
+import org.uni.recursion.SolutionFifth;
 import utils.Inputs;
 import utils.TestCase;
 
